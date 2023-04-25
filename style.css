@@ -1,0 +1,219 @@
+body {
+  margin: 0;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: rgba(231, 231, 231, 0.71);
+  /* transition-duration: 2s; */
+  text-align: center;
+  user-select: none;
+}
+
+header {
+
+  text-align: center;
+
+  z-index: 300;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(211, 205, 205, 0.402);
+  border-radius: 10px;
+  width: 100%;
+
+}
+
+h1 {
+
+  color: white;
+  text-shadow: -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+#menu {
+  display: flex;
+}
+
+input {
+  border-radius: 10px;
+  border: transparent;
+  cursor: pointer;
+  outline: none;
+
+}
+
+#CB {
+  background-color: rgb(134, 134, 177);
+  color: white;
+  text-shadow: -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  border: transparent;
+  border-radius: 10px;
+}
+
+#bigRoot {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  font-size: xx-large;
+  color: black;
+  font-weight: bolder;
+  cursor: pointer;
+  position: fixed;
+  z-index: 100;
+  color: rgb(206, 244, 148);
+  font-size: x-large;
+  text-shadow: -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+#bigRoot img {
+  height: 100%;
+  width: 100%;
+  margin-top: 15%;
+  border-radius: 100%;
+}
+
+
+
+
+#root {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-auto-rows: 35vh;
+  /* position: relative; */
+  z-index: -10;
+  filter: blur(0px);
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  #root {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: 35vh;
+    /* position: relative; */
+    z-index: -10;
+    filter: blur(0px);
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 300px) {
+  #root {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: 35vh;
+    /* position: relative; */
+    z-index: -10;
+    filter: blur(0px);
+  }
+}
+
+#pokemon_info {
+  background-color: rgba(255, 255, 255, 0.438);
+  position: absolute;
+  border-radius: 10px;
+  padding: 10%;
+}
+
+
+
+/* 600px */
+.pokemon {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-image: linear-gradient(#b8bdcc, #707279);
+  margin: 5%;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  cursor: pointer;
+  text-shadow: -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.pokemon img {
+  border-radius: 100px;
+  object-fit: contain;
+}
+
+
+.grass,
+.bug {
+  background-image: linear-gradient(#00f870, #6bac88);
+
+}
+
+.fire {
+  background-image: linear-gradient(#ff2600, #640000, #742e06);
+
+}
+
+.water {
+  background-image: linear-gradient(#0050b9, #1d7b88, #7ab3d4);
+
+}
+
+.poison {
+  background-image: linear-gradient(#8400ff, #951aa0, #e4cbf3);
+
+}
+
+.ghost {
+  background-image: linear-gradient(#270c41, #3c2b3d, #897992);
+
+}
+
+.electric {
+  background-image: linear-gradient(rgb(223, 223, 95), rgb(131, 131, 39), rgb(255, 255, 0));
+
+}
+
+.normal {}
+
+.ground,
+.rock {
+  background-image: linear-gradient(rgb(75, 50, 13), rgb(73, 56, 22), rgb(170, 166, 164));
+
+}
+
+.psychic {
+  background-image: linear-gradient(#e797af, #66182f, #F95587);
+
+}
+
+.ice {
+  background-image: linear-gradient(blue, rgb(154, 169, 182), blue);
+
+}
+
+
+
+#load_more {
+  height: 10vh;
+  width: 10vh;
+  border-radius: 100%;
+  background-image: linear-gradient(rgb(171, 171, 171), rgb(14, 14, 14));
+  background-size: 100% 100%;
+  cursor: pointer;
+
+  border: transparent;
+  font-size: x-large;
+  margin-bottom: 5%;
+}

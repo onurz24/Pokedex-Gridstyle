@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Pokedex</h1> 
+      <div id="menu">
+        <input placeholder="Über Name Suche" type="search" id="SB"
+        onchange="search(this.value)">
+        <br>        <br>
+        <button id="CB">Reset</button>
+        </div>
+    </header>
+    <div id="bigRoot">
+      <div id="pokemon_info"></div>
+    </div>
+    <div id="root"></div>
+
+<button id="load_more">Load More</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="app.js" ></script>
+
+  </body>
+</html>
